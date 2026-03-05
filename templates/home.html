@@ -1,0 +1,78 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Business Promotion</title>
+
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+    <h2 class="logo">OnLine</h2>
+
+    <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="{% url 'contact' %}" class="contact-btn">Contact</a>
+    </div>
+</nav>
+
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Grow Your Business With Us</h1>
+
+        <p>
+        We help businesses grow with modern websites, digital marketing,
+        and powerful online solutions.
+        </p>
+
+        <a href="{% url 'contact' %}" class="btn">Get Our Service</a>
+
+    </div>
+
+</section>
+
+
+<section class="services">
+
+    <h2>Our Services</h2>
+
+    <div class="service-box">
+
+        <div class="card">
+            <h3>Website Development</h3>
+            <p>Modern and responsive websites for your business.</p>
+        </div>
+
+        <div class="card">
+            <h3>Digital Marketing</h3>
+            <p>Reach more customers with powerful marketing strategies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Brand Growth</h3>
+            <p>We help your brand grow and stand out online.</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+<p>© 2026 GrowBiz | All Rights Reserved</p>
+
+</footer>
+
+
+</body>
+</html>
